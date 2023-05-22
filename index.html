@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="fresh-alt.svg" width="112" height="28">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        Features
+                    </a>
+                    <a class="navbar-item">
+                        Pricing
+                    </a>
+                    <a class="navbar-item">
+                        Log In
+                    </a>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </nav>
+
+
+    <section class="hero py-6">
+        <div class="hero-body">
+          <div class="columns is-vcentered is-centered">
+              <div class="column is-5">
+                  <h1 class="title is-1">
+                    Manage and deploy your apps seamlessly.
+                  </h1>
+                  <p class="subtitle">
+                    Lorem ipsum sit dolor amet is a dummy text used by typography industry
+                  </p>
+                  <button class="button is-info">Get Started</button>
+                  <button class="button is-normal">Discover</button>
+              </div>
+              <div class="column is-6"><img class="hero-image" src="https://fresh.cssninja.io/img/illustrations/worker.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+              <div class="container">
+                <ul class="is-justify-content-center">
+                    <li><a><img src="https://fresh.cssninja.io/img/logo/clients/systek.svg" alt="" width="100px"></a></li>
+                    <li><a><img src="https://fresh.cssninja.io/img/logo/clients/tribe.svg" alt="" width="100px"></a></li>
+                    <li><a><img src="https://fresh.cssninja.io/img/logo/clients/kromo.svg" alt="" width="100px"></a></li>
+                    <li><a><img src="https://fresh.cssninja.io/img/logo/clients/infinite.svg" alt="" width="100px"></a></li>
+                    <li><a><img src="https://fresh.cssninja.io/img/logo/clients/gutwork.svg" alt="" width="100px"></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+        <!-- <div class="hero-foot">
+            <nav class="tabs">
+              <div class="container">
+                <ul>
+                  <li><a><img src="https://fresh.cssninja.io/img/logo/clients/systek.svg" alt=""></a></li>
+                  <li><a><img src="https://fresh.cssninja.io/img/logo/clients/tribe.svg" alt=""></a></li>
+                  <li><a><img src="https://fresh.cssninja.io/img/logo/clients/kromo.svg" alt=""></a></li>
+                  <li><a><img src="https://fresh.cssninja.io/img/logo/clients/infinite.svg" alt=""></a></li>
+                  <li><a><img src="https://fresh.cssninja.io/img/logo/clients/gutwork.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div> -->
+      </section>
+      
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+    </script>
 </body>
+
 </html>

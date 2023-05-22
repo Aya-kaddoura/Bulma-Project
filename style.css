@@ -1,0 +1,9 @@
+.tabs.is-fullwidth li{
+    flex-grow: 0;
+}
+.hero{
+    background-color: #FBFBFB;
+}
+.navbar{
+    background-color: transparent;
+}

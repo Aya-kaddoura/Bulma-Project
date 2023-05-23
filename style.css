@@ -16,3 +16,16 @@
 .section .columns .columns .column{
     border: 1px solid #ededed;
 }
+div i{
+    color: #6a7b96
+}
+div i.fa-border{
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+.columns .column a:hover i{
+    color: #F39200;
+    transform: translateY(-7px);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    transition: all .5s ease;
+}

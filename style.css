@@ -1,9 +1,18 @@
 .tabs.is-fullwidth li{
     flex-grow: 0;
 }
-.hero{
+.hero,.navbar,.features{
     background-color: #FBFBFB;
 }
-.navbar{
-    background-color: transparent;
+.container h1~p::after{
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 70px;
+    height: 4px;
+    background-color: orange;
+    border-radius: 5px;
+}
+.section .columns .columns .column{
+    border: 1px solid #ededed;
 }

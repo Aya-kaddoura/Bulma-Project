@@ -48,3 +48,19 @@ div i.fa-border{
     line-height: 1.7;
     font-weight: 500;
 }
+.dollar-symbol span{
+    position: relative;
+}
+.dollar-symbol span::before{
+    content: "$";
+    display: block;
+    font-size: .5em;
+    position: absolute;
+    left: -12px;
+    top: 5px;
+}
+.plans button.is-info:hover{
+    box-shadow: 0 14px 26px -12px #4fc1ea6b,0 4px 23px #0000001f,0 8px 10px -5px #4fc1ea33;
+    opacity: .8;
+    transition: all .5s ease;
+}

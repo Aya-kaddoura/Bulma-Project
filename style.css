@@ -13,7 +13,7 @@
     background-color: orange;
     border-radius: 5px;
 }
-.section .columns .columns .column{
+.services .columns .columns .column{
     border: 1px solid #ededed;
 }
 div i{
@@ -28,4 +28,23 @@ div i.fa-border{
     transform: translateY(-7px);
     box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
     transition: all .5s ease;
+}
+.title{
+    font-family: Nunito,sans-serif;
+}
+.testimonial{
+    background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTMyMzE1OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.testimonial .card{
+    border-radius: 10px;
+}
+.testimonial .media figure img{
+    border-radius: 50%;
+}
+.testimonial .card p{
+    line-height: 1.7;
+    font-weight: 500;
 }

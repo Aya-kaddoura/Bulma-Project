@@ -1,3 +1,7 @@
+.start-button{
+    background-color: #4FC1EA;
+    border: none;
+}
 .tabs.is-fullwidth li{
     flex-grow: 0;
 }
@@ -27,6 +31,9 @@ div i.fa-border{
     color: #F39200;
     transform: translateY(-7px);
     box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    transition: all .5s ease;
+}
+.columns .column a i{
     transition: all .5s ease;
 }
 .title{
@@ -59,7 +66,7 @@ div i.fa-border{
     left: -12px;
     top: 5px;
 }
-.plans button.is-info:hover,.quote button:hover{
+.start-button:hover,.services button:hover,.plans button.is-info:hover,.quote button:hover{
     box-shadow: 0 14px 26px -12px #4fc1ea6b,0 4px 23px #0000001f,0 8px 10px -5px #4fc1ea33;
     opacity: .8;
     transition: all .5s ease;
@@ -73,5 +80,13 @@ div i.fa-border{
 }
 .footer a:hover{
     color: #fff;
+}
+
+.bg-main-color{
+    background-color: #F39200;
+}
+
+.main-color{
+    color: #F39200;
 }
 
